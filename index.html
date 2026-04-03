@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도토리 스튜디오 | 인테리어 컨설팅 - 견적 검토, 현장 감리, 하자 점검</title>
+  <meta name="description" content="명품 브랜드 매장 설계·시공 15년 전문가의 인테리어 컨설팅. 견적 검토, 현장 감리, 하자 점검, 법률 연계까지.">
+  <meta property="og:title" content="도토리 스튜디오 | 인테리어 컨설팅">
+  <meta property="og:description" content="수천만 원이 걸린 공사, 전문가 확인 한 번 없이 진행하시겠습니까?">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dtrs-incon.com">
+  <meta property="og:image" content="https://dtrs-incon.com/OG_IMG_dotori_studio.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="도토리 스튜디오 | 인테리어 컨설팅">
+  <meta name="twitter:description" content="수천만 원이 걸린 공사, 전문가 확인 한 번 없이 진행하시겠습니까?">
+  <meta name="twitter:image" content="https://dtrs-incon.com/OG_IMG_dotori_studio.png">
+
+  <!-- Google Analytics (GA4) - G-RWXLVH0QX6를 실제 측정 ID로 교체하세요 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWXLVH0QX6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RWXLVH0QX6');
+  </script>
+
+  <!-- JSON-LD 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "도토리 스튜디오",
+    "description": "명품 브랜드 매장 설계·시공 15년 전문가의 인테리어 컨설팅. 견적 검토, 현장 감리, 하자 점검, 법률 연계.",
+    "url": "https://dtrs-incon.com",
+    "logo": "https://dtrs-incon.com/logo.png",
+    "telephone": "1533-9829",
+    "email": "cs870@naver.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "별내중앙로 26, 10층 1002-629호(별내동, 진영엔타워)",
+      "addressLocality": "남양주시",
+      "addressRegion": "경기도",
+      "addressCountry": "KR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "12",
+      "bestRating": "5"
+    },
+    "priceRange": "₩50,000~",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 37.5665, "longitude": 127.0780 },
+      "geoRadius": "50000"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logofabi.png">
+  <link rel="apple-touch-icon" href="logofabi.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div class="loading-screen" id="loadingScreen">
+    <img src="logo.png" alt="도토리 스튜디오" class="loading-logo">
+    <div class="loading-bar"><div class="loading-bar-inner"></div></div>
+  </div>
+
+  <!-- ========== HEADER (NAV) ========== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="logo.png" alt="도토리 스튜디오" class="logo-img"></a>
+      <nav class="nav">
+        <a href="#situation">상황 진단</a>
+        <a href="#services">서비스</a>
+        <a href="#reviews">후기</a>
+        <a href="#pricing">비용</a>
+        <a href="#contact" class="nav-cta btn-ripple">상담 신청</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <nav class="mobile-nav">
+      <img src="logo.png" alt="도토리 스튜디오" class="mobile-nav-logo">
+      <a href="#situation">상황 진단</a>
+      <a href="#services">서비스</a>
+      <a href="#reviews">후기</a>
+      <a href="#pricing">비용</a>
+      <a href="#contact" class="nav-cta btn-ripple">상담 신청</a>
+    </nav>
+  </div>
+
+  <!-- ========== SECTION 1: HERO ========== -->
+  <section class="hero section-dark" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title fade-up">
+        수천만 원이 걸린 공사,<br>
+        전문가 확인 한 번 없이<br>
+        진행하시겠습니까?
+      </h1>
+      <p class="hero-sub fade-up delay-1">
+        실제로 전화 상담 한 통에 <strong class="highlight-amount">2,000만원</strong>을 아낀 고객이 있습니다.
+      </p>
+      <p class="hero-desc fade-up delay-2">
+        공사 전 견적 검토 → 공사 중 현장 점검 → 완공 후 하자 체크까지.<br>
+        명품 브랜드 매장 설계·시공 15년 전문가가 처음부터 끝까지 함께합니다.
+      </p>
+      <a href="#contact" class="btn btn-primary btn-ripple fade-up delay-3">내 상황 상담받기</a>
+
+      <!-- Trust bar -->
+      <div class="hero-trust fade-up delay-4">
+        <div class="trust-item"><span class="trust-num">15년+</span><span class="trust-label">현장 실무 경력</span></div>
+        <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">고객 만족도</span></div>
+        <div class="trust-item"><span class="trust-num">5.0</span><span class="trust-label">평점</span></div>
+        <div class="trust-item"><span class="trust-num">A to Z</span><span class="trust-label">원스톱 케어</span></div>
+      </div>
+      <div class="hero-brands fade-up delay-4">
+        <span>PATEK PHILIPPE</span>
+        <span>ROLEX</span>
+        <span>VACHERON CONSTANTIN</span>
+        <span>OMEGA</span>
+        <span>JAEGER-LECOULTRE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 2: PROBLEM ========== -->
+  <section class="section section-light" id="problem">
+    <div class="container">
+      <h2 class="section-title fade-up">인테리어 업계에는<br>당신이 모르는 규칙이 있습니다.</h2>
+      <div class="problem-list fade-up delay-1">
+        <div class="problem-item">
+          <span class="problem-icon">01</span>
+          <p>견적서에는 <strong>"합계"만 있고,</strong> 근거는 없습니다.</p>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">02</span>
+          <p>3D 시안은 항상 예쁘지만, <strong>도면은 항상 다릅니다.</strong></p>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">03</span>
+          <p><strong>"추가 공사"는</strong> 처음부터 빠뜨려놓고, 나중에 청구합니다.</p>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">04</span>
+          <p>업체끼리는 <strong>서로의 가격을 흔들지 않습니다.</strong></p>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">05</span>
+          <p>하자가 생기면 <strong>"원래 그렇다"고</strong> 말합니다.</p>
+        </div>
+      </div>
+      <p class="problem-conclusion fade-up delay-2">
+        당신은 수천만 원을 쓰면서<br>
+        <strong>아무도 당신 편에 없는 게임을 하고 있습니다.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3: SITUATION DIAGNOSIS ========== -->
+  <section class="section section-dark" id="situation">
+    <div class="container">
+      <h2 class="section-title fade-up">지금 어떤 상황이세요?</h2>
+      <p class="section-subtitle fade-up delay-1">눌러보시면 맞는 서비스를 안내드립니다.</p>
+      <div class="situation-cards">
+        <!-- Card 1 -->
+        <div class="situation-card card-red fade-up delay-1" data-card="before">
+          <div class="situation-card-header">
+            <span class="situation-step">STEP 1</span>
+            <div class="situation-dot dot-red"></div>
+            <h3>아직 공사 전이에요</h3>
+            <svg class="situation-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="situation-card-body">
+            <p>견적서를 받았거나, 업체를 정하기 전이라면.<br><strong>시작 전에 한 번만 확인하면 수백만 원이 달라집니다.</strong></p>
+            <div class="situation-recommend">
+              <span class="recommend-tag">추천</span> 전화 상담 또는 서면 검토
+            </div>
+            <a href="#contact" class="btn btn-sm btn-outline btn-ripple">상담 신청하기</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="situation-card card-yellow fade-up delay-2" data-card="during">
+          <div class="situation-card-header">
+            <span class="situation-step">STEP 2</span>
+            <div class="situation-dot dot-yellow"></div>
+            <h3>지금 공사 중이에요<span class="urgent-badge">긴급 상담 가능</span></h3>
+            <svg class="situation-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="situation-card-body">
+            <p>추가비가 나왔거나, 뭔가 이상한데 확인이 어렵다면.<br><strong>완공 후에 발견하면 늦습니다. 지금 잡아야 합니다.</strong></p>
+            <div class="situation-recommend">
+              <span class="recommend-tag">추천</span> 전화 상담 또는 현장 방문
+            </div>
+            <a href="#contact" class="btn btn-sm btn-outline btn-ripple">상담 신청하기</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="situation-card card-green fade-up delay-3" data-card="after">
+          <div class="situation-card-header">
+            <span class="situation-step">STEP 3</span>
+            <div class="situation-dot dot-green"></div>
+            <h3>공사 끝났는데 문제가 있어요</h3>
+            <svg class="situation-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="situation-card-body">
+            <p>하자가 생겼거나, 업체가 대응을 안 하거나.<br><strong>보고서 정리부터 법적 대응 준비까지 함께합니다.</strong></p>
+            <div class="situation-recommend">
+              <span class="recommend-tag">추천</span> 서면 검토 + 페이퍼워크 또는 현장 방문
+            </div>
+            <a href="#contact" class="btn btn-sm btn-outline btn-ripple">상담 신청하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4: SERVICE TIMELINE ========== -->
+  <section class="section section-light" id="services">
+    <div class="container">
+      <h2 class="section-title fade-up">공사 전, 공사 중, 공사 후. 전부.</h2>
+      <p class="section-subtitle fade-up delay-1">"견적서만 봐드리는 서비스"가 아닙니다.<br>시작부터 끝까지, 당신 옆에 서는 서비스입니다.</p>
+
+      <div class="timeline">
+        <!-- STEP 1 -->
+        <div class="timeline-item fade-up" data-phase="before">
+          <div class="timeline-marker marker-red">
+            <span class="timeline-icon">01</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase phase-red">공사 전</div>
+            <h3>시작부터 제대로</h3>
+            <div class="timeline-detail">
+              <h4>견적서·도면 검토</h4>
+              <p>이 견적이 비싼 건지 싼 건지가 아닙니다.<br>빠진 게 뭔지, 나중에 추가로 붙을 게 뭔지를 알려드립니다.<br><strong>"합계"가 아니라 "구조"를 봅니다.</strong></p>
+            </div>
+            <div class="timeline-detail">
+              <h4>계약서 검토 + 법률 연계</h4>
+              <p>시공업체가 쓰는 표준계약서는 시공업체 표준입니다.<br>당신이 불리한 조항이 어디에 숨어 있는지 미리 짚어드립니다.<br><strong>필요 시 건축분쟁 전문 로펌까지 연계합니다.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="timeline-item fade-up" data-phase="during">
+          <div class="timeline-marker marker-yellow">
+            <span class="timeline-icon">02</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase phase-yellow">공사 중</div>
+            <h3>도중에 잡아야 나중에 안 싸운다</h3>
+            <div class="timeline-detail">
+              <h4>중간 현장 점검</h4>
+              <p>견적서대로 하고 있는지, 도면대로 짓고 있는지.<br><strong>부실 시공을 완공 후에 발견하면 증거가 사라집니다.</strong></p>
+            </div>
+            <div class="timeline-detail">
+              <h4>추가 비용 대응</h4>
+              <p>"이건 원래 안 포함이에요"라는 말,<br><strong>진짜 안 포함인지 처음부터 빼놓은 건지 구별해드립니다.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="timeline-item fade-up" data-phase="after">
+          <div class="timeline-marker marker-green">
+            <span class="timeline-icon">03</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase phase-green">공사 후</div>
+            <h3>끝나고 나서도 당신 편</h3>
+            <div class="timeline-detail">
+              <h4>하자 점검</h4>
+              <p>입주 전 마지막 관문.<br><strong>눈에 보이는 마감 불량부터 눈에 안 보이는 하자 요인까지 확인.</strong></p>
+            </div>
+            <div class="timeline-detail">
+              <h4>분쟁 대응 + 보고서 작성</h4>
+              <p>업체가 "모르쇠"로 나올 때,<br>보험 접수용 자료 정리, 피해 보고서 작성,<br><strong>법적 대응을 위한 근거 문서까지 만들어드립니다.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 5: TRUST ========== -->
+  <section class="section section-dark" id="trust">
+    <div class="container">
+      <div class="trust-stats fade-up">
+        <div class="stat-card">
+          <span class="stat-number counter" data-target="15">0</span><span class="stat-suffix">년 이상</span>
+          <p class="stat-desc">명품 브랜드 매장 &amp; 상업공간<br>설계·시공 실무 경력</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number counter" data-target="100">0</span><span class="stat-suffix">%</span>
+          <p class="stat-desc">고객 만족도<br>단 한 건의 불만족 없음</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">&#9733; 5.0</span><span class="stat-suffix"> / 5.0</span>
+          <p class="stat-desc">전 리뷰 만점</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">A to Z</span>
+          <p class="stat-desc">견적 검토 → 현장 감리<br>→ 하자 점검 → 법률 연계</p>
+        </div>
+      </div>
+
+      <div class="brand-showcase fade-up delay-1">
+        <div class="brand-line">
+          <span>파텍필립</span><span class="brand-dot">·</span>
+          <span>롤렉스</span><span class="brand-dot">·</span>
+          <span>바쉐론 콘스탄틴</span><span class="brand-dot">·</span>
+          <span>오메가</span><span class="brand-dot">·</span>
+          <span>예거 르쿨트르</span>
+        </div>
+        <div class="brand-line brand-line-sub">
+          <span>VVIP 레지던스</span><span class="brand-dot">·</span>
+          <span>프라이빗 의전 공간</span><span class="brand-dot">·</span>
+          <span>프리미엄 레스토랑</span><span class="brand-dot">·</span>
+          <span>카페</span>
+        </div>
+      </div>
+
+      <p class="trust-tagline fade-up delay-2">
+        이 브랜드들이 요구하는 시공 수준을 15년간 맞춰온 사람이,<br>
+        <strong>이제 당신의 인테리어를 봐드립니다.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 6: REVIEWS ========== -->
+  <section class="section section-light" id="reviews">
+    <div class="container">
+      <h2 class="section-title fade-up">직접 겪은 분들의 진짜 이야기</h2>
+      <p class="section-subtitle fade-up delay-1">만족도 100%. 평점 5.0. 단 한 건의 불만족도 없었습니다.</p>
+
+      <div class="review-grid">
+        <!-- Review 1 -->
+        <div class="review-card fade-up">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="review-tag tag-green">누수 피해 · 보험 처리 원스톱</span>
+          <p class="review-text">"윗집 공사 때문에 누수 피해가 생겨서 멘붕이었는데, 보험 접수부터 필요한 자료 정리까지 정말 체계적으로 도와주셨습니다. 어떤 사진이 필요한지, 보험사에 어떻게 설명해야 하는지까지 다 알려주시고 보고서로 정리해주셔서 보험 처리 과정이 훨씬 수월했어요. <strong>단순히 조언만 해주는 게 아니라, 실제로 처리할 수 있게 정리해주시는 게 가장 좋았습니다.</strong>"</p>
+          <span class="review-author">— 도지*****</span>
+        </div>
+        <!-- Review 2 -->
+        <div class="review-card fade-up">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="review-tag tag-yellow">반셀프 인테리어 · 막막함에서 안심으로</span>
+          <p class="review-text">"인테리어 거의 처음이라 반셀프로 하려니까 너무 막막했는데, 전체 흐름부터 현실적인 조언까지 정리해주셔서 진짜 큰 도움 됐어요!!! <strong>이론 말고 실제 현장 기준으로 알려주셔서</strong> 이해도 잘 됐고, 덕분에 마음 편하게 이사 준비했습니다! 반셀프 하시는 분들은 꼭 한 번 받아보세요."</p>
+          <span class="review-author">— st*****</span>
+        </div>
+        <!-- Review 3 -->
+        <div class="review-card fade-up">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="review-tag tag-red">시공 계약 · 끌려다니지 않은 경험</span>
+          <p class="review-text">"매우만족입니다^^ <strong>덕분에 시공업자에게 안끌려다니고 계약잘했습니다.</strong>"</p>
+          <span class="review-author">— 열정*****</span>
+        </div>
+        <!-- Review 4 -->
+        <div class="review-card fade-up">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="review-tag tag-green">현장 방문 · 적극적 태도</span>
+          <p class="review-text">"원하는 시간대로 조율하여 방문해 주시고 시원시원하게 상담해 주셨어요. <strong>하나라도 더 말씀해 주려고도 하고요~~</strong> 감사합니다!!"</p>
+          <span class="review-author">— im*****</span>
+        </div>
+        <!-- Review 5 -->
+        <div class="review-card fade-up">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="review-tag tag-yellow">서면 검토 · 지식까지 얻어간 상담</span>
+          <p class="review-text">"작업물에 대한 퀄리티도 정말 좋고, 추가로 상담도 친절하게 해주셨습니다. <strong>덕분에 인테리어 관련해서 많은 지식을 얻을 수 있었고</strong>, 정말 큰 도움이 되었습니다."</p>
+          <span class="review-author">— 꿈꾸*****</span>
+        </div>
+        <!-- Review 6 -->
+        <div class="review-card fade-up">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="review-tag tag-green">재이용 의사 100%</span>
+          <p class="review-text">"꼼꼼히 같이 봐주셔서 감사합니다!!! <strong>시공하면서 또 이용하려구요</strong>"</p>
+          <span class="review-author">— 다정*****</span>
+        </div>
+      </div>
+
+      <!-- Mobile slider (hidden on desktop) -->
+      <div class="review-slider-wrapper">
+        <div class="review-slider" id="reviewSlider">
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="review-tag tag-green">누수 피해 · 보험 처리 원스톱</span>
+            <p class="review-text">"보험 접수부터 필요한 자료 정리까지 정말 체계적으로 도와주셨습니다. <strong>실제로 처리할 수 있게 정리해주시는 게 가장 좋았습니다.</strong>"</p>
+            <span class="review-author">— 도지*****</span>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="review-tag tag-yellow">반셀프 인테리어 · 막막함에서 안심으로</span>
+            <p class="review-text">"전체 흐름부터 현실적인 조언까지 정리해주셔서 진짜 큰 도움 됐어요!!! <strong>이론 말고 실제 현장 기준으로 알려주셔서</strong> 이해도 잘 됐고, 덕분에 마음 편하게 이사 준비했습니다!"</p>
+            <span class="review-author">— st*****</span>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="review-tag tag-red">시공 계약 · 끌려다니지 않은 경험</span>
+            <p class="review-text">"매우만족입니다^^ <strong>덕분에 시공업자에게 안끌려다니고 계약잘했습니다.</strong>"</p>
+            <span class="review-author">— 열정*****</span>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="review-tag tag-green">현장 방문 · 적극적 태도</span>
+            <p class="review-text">"시원시원하게 상담해 주셨어요. <strong>하나라도 더 말씀해 주려고도 하고요~~</strong> 감사합니다!!"</p>
+            <span class="review-author">— im*****</span>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="review-tag tag-yellow">서면 검토 · 지식까지 얻어간 상담</span>
+            <p class="review-text">"<strong>덕분에 인테리어 관련해서 많은 지식을 얻을 수 있었고</strong>, 정말 큰 도움이 되었습니다."</p>
+            <span class="review-author">— 꿈꾸*****</span>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <span class="review-tag tag-green">재이용 의사 100%</span>
+            <p class="review-text">"꼼꼼히 같이 봐주셔서 감사합니다!!! <strong>시공하면서 또 이용하려구요</strong>"</p>
+            <span class="review-author">— 다정*****</span>
+          </div>
+        </div>
+        <div class="review-dots" id="reviewDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 7: PRICING ========== -->
+  <section class="section section-dark" id="pricing">
+    <div class="container">
+      <h2 class="section-title fade-up">명확한 서비스. 합리적인 비용.</h2>
+      <p class="section-subtitle fade-up delay-1">상황에 맞는 정확한 서비스를 제공합니다.</p>
+
+      <div class="pricing-cards">
+        <div class="pricing-card fade-up delay-1">
+          <div class="pricing-icon">&#128222;</div>
+          <h3>전화 상담</h3>
+          <div class="pricing-price"><span class="price-amount">55,000</span><span class="price-from">원</span></div>
+          <p class="pricing-desc">한 번 결제로 시간 제한 없이 상담받으실 수 있습니다. 추가 요금 없이, 궁금한 점이 해소될 때까지 편하게 상담하세요.</p>
+          <a href="#contact" class="btn btn-outline btn-ripple">상담 신청하기</a>
+        </div>
+        <div class="pricing-card fade-up delay-2">
+          <div class="pricing-icon">&#128203;</div>
+          <h3>서면 검토 + 페이퍼워크</h3>
+          <div class="pricing-price"><span class="price-amount">385,000</span><span class="price-from">원~</span></div>
+          <p class="pricing-desc">도면·견적서 항목별 정밀 분석 + 검토 보고서 작성. 하자·분쟁 시 피해 정리 문서, 보험 접수용 자료 등 페이퍼워크도 포함됩니다. <strong>"말로만 알려주는 게 아니라, 서류로 무장시켜 드립니다."</strong></p>
+          <p class="pricing-sub">※ 사무실 1일 작업 분량 기준, 분량·복잡도에 따라 달라질 수 있습니다.</p>
+          <a href="#contact" class="btn btn-outline btn-ripple">상담 신청하기</a>
+        </div>
+        <div class="pricing-card pricing-card-featured fade-up delay-3">
+          <span class="pricing-badge">MOST POPULAR</span>
+          <div class="pricing-icon">&#127968;</div>
+          <h3>현장 방문 점검 + 보고서</h3>
+          <div class="pricing-price"><span class="price-amount">495,000</span><span class="price-from">원~</span></div>
+          <p class="pricing-desc">현장을 직접 방문하여 시공 상태·하자 여부 확인 후 점검 보고서를 작성해 드립니다.</p>
+          <p class="pricing-sub">※ 1일 1회 방문 기준, 수도권 교통비 포함. 지방은 출장 경비 별도.</p>
+          <a href="#contact" class="btn btn-primary btn-ripple">상담 신청하기</a>
+        </div>
+      </div>
+
+      <div class="pricing-note fade-up">
+        <p>
+          · 위 금액은 부가세(VAT) 포함 금액입니다.<br>
+          · 세금계산서 및 현금영수증 발행 가능합니다.<br>
+          · 상황·범위에 따라 조율 가능합니다.<br>
+          · 계약서 검토, 분쟁 대응, 법률 자문 연계 등 추가 서비스도 가능합니다.<br>
+          · 여러 서비스를 함께 진행하시는 경우 패키지로 조율해 드립니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 8: FAQ ========== -->
+  <section class="section section-light" id="faq">
+    <div class="container">
+      <h2 class="section-title fade-up">자주 묻는 질문</h2>
+
+      <div class="faq-list fade-up delay-1">
+        <div class="faq-item">
+          <button class="faq-question btn-ripple">
+            <span>이미 공사가 끝났는데도 도움받을 수 있나요?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>네. 오히려 공사 끝나고 문제가 터져서 오시는 분이 절반입니다. 하자 점검, 피해 보고서 작성, 법률 자문 연계까지 가능합니다.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question btn-ripple">
+            <span>업체랑 싸우고 있는데 도와주실 수 있나요?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>현재 상황 정리 → 대응 전략 수립 → 근거 문서 작성 → 필요 시 법적 조치 연계. 혼자 싸우지 마세요.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question btn-ripple">
+            <span>전화 상담만으로 충분할까요?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>급한 대응 방향이나 견적 감 잡기에는 전화로 충분합니다. 복잡한 케이스는 상담 후 적합한 서비스를 안내드립니다.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question btn-ripple">
+            <span>직접 시공도 해주시나요?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>아닙니다. 저는 오직 고객 편에서 검토·점검·자문만 합니다. 시공까지 하면 "같은 편"이 될 수 없습니다.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question btn-ripple">
+            <span>수도권 외 지역도 되나요?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            <p>전화·서면 검토는 전국 가능합니다. 현장 방문은 수도권 기준, 그 외 지역은 별도 협의합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 9: FINAL CTA + FORM ========== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-up">
+        인테리어에서 돈을 지키는 방법은 간단합니다.<br>
+        <strong>당신 편을 한 명 두는 겁니다.</strong>
+      </h2>
+      <p class="section-subtitle fade-up delay-1">공사 전이든, 공사 중이든, 이미 끝났든 — 언제든 괜찮습니다.</p>
+
+      <div class="contact-wrapper fade-up delay-2">
+        <!-- Quick CTA -->
+        <div class="contact-quick">
+          <h3>빠른 상담</h3>
+          <a href="tel:1533-9829" class="btn btn-cta-phone btn-ripple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            1533-9829 전화 상담
+          </a>
+          <a href="https://open.kakao.com/o/saXRBS3g" target="_blank" rel="noopener" class="btn btn-cta-kakao btn-ripple">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3C6.48 3 2 6.58 2 10.9c0 2.78 1.86 5.22 4.65 6.6l-.96 3.56c-.08.3.26.54.52.37l4.23-2.82c.5.06 1.02.09 1.56.09 5.52 0 10-3.58 10-7.9S17.52 3 12 3z"/></svg>
+            카카오톡 문의하기
+          </a>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+          <h3>상담 신청서</h3>
+          <form id="consultForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name">이름 <span class="required">*</span></label>
+                <input type="text" id="f-name" name="name" required placeholder="성함을 입력해주세요" lang="ko" inputmode="text" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="f-phone">연락처 <span class="required">*</span></label>
+                <input type="tel" id="f-phone" name="phone" required placeholder="010-0000-0000" inputmode="tel" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-location">지역 / 현장 위치 <span class="required">*</span></label>
+              <input type="text" id="f-location" name="location" required placeholder="예: 서울 강남구" lang="ko" inputmode="text">
+            </div>
+
+            <div class="form-group">
+              <label>공간 유형 <span class="optional">필요 시 기재</span></label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="space_type" value="주거공간 (아파트·빌라·주택 등)"> 주거공간 (아파트·빌라·주택 등)</label>
+                <label class="radio-label"><input type="radio" name="space_type" value="상업공간 (사무실·매장·카페·식당 등)"> 상업공간 (사무실·매장·카페·식당 등)</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>현재 단계 <span class="optional">필요 시 기재</span></label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="stage" value="시공 전 — 업체 미팅 또는 견적 비교 중"> 시공 전 — 업체 미팅 또는 견적 비교 중</label>
+                <label class="radio-label"><input type="radio" name="stage" value="시공 전 — 계약 완료, 공사 시작 전"> 시공 전 — 계약 완료, 공사 시작 전</label>
+                <label class="radio-label"><input type="radio" name="stage" value="시공 중 — 공사 진행 중 (중간 점검 필요)"> 시공 중 — 공사 진행 중 (중간 점검 필요)</label>
+                <label class="radio-label"><input type="radio" name="stage" value="시공 완료 — 준공 후 마감 상태 점검 희망"> 시공 완료 — 준공 후 마감 상태 점검 희망</label>
+                <label class="radio-label"><input type="radio" name="stage" value="하자·분쟁 — 시공사와 문제가 발생한 상태"> 하자·분쟁 — 시공사와 문제가 발생한 상태</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>평수 (전용면적 기준) <span class="optional">필요 시 기재</span></label>
+              <div class="radio-group radio-group-inline">
+                <label class="radio-label"><input type="radio" name="area" value="10평 이하"> 10평 이하</label>
+                <label class="radio-label"><input type="radio" name="area" value="11~20평"> 11~20평</label>
+                <label class="radio-label"><input type="radio" name="area" value="21~30평"> 21~30평</label>
+                <label class="radio-label"><input type="radio" name="area" value="31~40평"> 31~40평</label>
+                <label class="radio-label"><input type="radio" name="area" value="41평 이상"> 41평 이상</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-concern">구체적인 고민 사항 <span class="optional">필요 시 기재</span></label>
+              <textarea id="f-concern" name="concern" rows="4" placeholder="예) 견적서를 받았는데 적정 가격인지 모르겠어요 / 공사 중 추가비가 나왔는데 합당한 건지 확인하고 싶어요 / 하자가 생겼는데 업체가 대응을 안 해요" lang="ko"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>보유 자료 (중복 선택 가능) <span class="optional">필요 시 기재</span></label>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="docs" value="견적서"> 견적서</label>
+                <label class="checkbox-label"><input type="checkbox" name="docs" value="도면 (평면도·입면도·천정도 등)"> 도면 (평면도·입면도·천정도 등)</label>
+                <label class="checkbox-label"><input type="checkbox" name="docs" value="3D 시안 / 렌더링"> 3D 시안 / 렌더링</label>
+                <label class="checkbox-label"><input type="checkbox" name="docs" value="계약서"> 계약서</label>
+                <label class="checkbox-label"><input type="checkbox" name="docs" value="하자 관련 사진·영상"> 하자 관련 사진·영상</label>
+                <label class="checkbox-label"><input type="checkbox" name="docs" value="아직 자료가 없음"> 아직 자료가 없음</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>희망 방문 일정 <span class="optional">필요 시 기재</span></label>
+              <div class="radio-group radio-group-inline">
+                <label class="radio-label"><input type="radio" name="schedule" value="평일 오전 (10~12시)"> 평일 오전 (10~12시)</label>
+                <label class="radio-label"><input type="radio" name="schedule" value="평일 오후 (13~18시)"> 평일 오후 (13~18시)</label>
+                <label class="radio-label"><input type="radio" name="schedule" value="주말 오전 (10~12시)"> 주말 오전 (10~12시)</label>
+                <label class="radio-label"><input type="radio" name="schedule" value="주말 오후 (13~18시)"> 주말 오후 (13~18시)</label>
+                <label class="radio-label"><input type="radio" name="schedule" value="협의 가능 (편한 시간대를 Q10에 적어주세요)"> 협의 가능</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-extra">기타 요청사항 또는 전달사항 <span class="optional">필요 시 기재</span></label>
+              <textarea id="f-extra" name="extra" rows="3" placeholder="추가로 전달하실 내용이 있으면 적어주세요." lang="ko"></textarea>
+            </div>
+
+            <div class="form-group form-agreement">
+              <label class="checkbox-label checkbox-agreement">
+                <input type="checkbox" id="f-agree" name="agree" required>
+                <span>본 상담은 인테리어 실무 경험에 기반한 전문 자문 서비스이며, 법률 자문에 해당하지 않습니다. 상담 내용을 바탕으로 한 최종 판단 및 의사결정의 책임은 의뢰인에게 있으며, 법적 분쟁 관련 사항은 별도 법률 전문가 상담을 권장합니다. <strong class="required">*</strong></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit btn-ripple">
+              <span class="btn-text">상담 신청서 제출하기</span>
+              <span class="btn-loading" style="display:none;">
+                <svg class="spinner" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="31.4 31.4" stroke-linecap="round"/></svg>
+                제출 중...
+              </span>
+              <span class="btn-success" style="display:none;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                제출 완료!
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <img src="logo.png" alt="도토리 스튜디오" class="footer-logo">
+      <p class="footer-sub">인테리어 컨설팅 전문 · 견적 검토 · 현장 감리 · 하자 점검</p>
+      <p class="footer-slogan">"<strong>도</strong>시에 스<strong>토리</strong>를 입히다" — 도토리 스튜디오</p>
+      <div class="footer-info">
+        <p>상호: 도토리 스튜디오 | 대표: 김지환 | 사업자등록번호: 565-58-00717</p>
+        <p>주소: 경기도 남양주시 별내중앙로 26, 10층 1002-629호(별내동, 진영엔타워)</p>
+        <p>전화: 1533-9829 | 이메일: cs870@naver.com</p>
+      </div>
+      <p>&copy; 2025 도토리 스튜디오 (Dotori Studio). All rights reserved.</p>
+      <p class="footer-sub"><a href="privacy.html" class="footer-link">개인정보처리방침</a></p>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING CTA ========== -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="https://open.kakao.com/o/saXRBS3g" target="_blank" rel="noopener" class="float-btn float-kakao btn-ripple" aria-label="카카오톡 문의">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 3C6.48 3 2 6.58 2 10.9c0 2.78 1.86 5.22 4.65 6.6l-.96 3.56c-.08.3.26.54.52.37l4.23-2.82c.5.06 1.02.09 1.56.09 5.52 0 10-3.58 10-7.9S17.52 3 12 3z"/></svg>
+      <span class="float-tooltip">카톡 문의</span>
+    </a>
+    <a href="tel:1533-9829" class="float-btn float-phone btn-ripple" aria-label="전화 상담">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span class="float-tooltip">전화 상담</span>
+    </a>
+  </div>
+
+  <!-- ========== MOBILE BOTTOM CTA BAR ========== -->
+  <div class="mobile-cta-bar" id="mobileCTABar">
+    <a href="tel:1533-9829" class="mobile-cta-btn mobile-cta-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      전화 상담
+    </a>
+    <a href="https://open.kakao.com/o/saXRBS3g" target="_blank" rel="noopener" class="mobile-cta-btn mobile-cta-kakao">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3C6.48 3 2 6.58 2 10.9c0 2.78 1.86 5.22 4.65 6.6l-.96 3.56c-.08.3.26.54.52.37l4.23-2.82c.5.06 1.02.09 1.56.09 5.52 0 10-3.58 10-7.9S17.52 3 12 3z"/></svg>
+      카톡 문의
+    </a>
+    <a href="#contact" class="mobile-cta-btn mobile-cta-form">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+      상담 신청
+    </a>
+  </div>
+
+  <!-- ========== SHARE BUTTON ========== -->
+  <button class="share-btn" id="shareBtn" aria-label="공유하기">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+  </button>
+  <div class="share-menu" id="shareMenu">
+    <button class="share-item" id="shareKakao">카카오톡 공유</button>
+    <button class="share-item" id="shareCopy">링크 복사</button>
+  </div>
+
+  <!-- ========== SUCCESS MODAL ========== -->
+  <div class="success-modal" id="successModal">
+    <div class="success-modal-backdrop"></div>
+    <div class="success-modal-content">
+      <div class="success-checkmark">
+        <svg viewBox="0 0 52 52" width="64" height="64">
+          <circle class="success-circle" cx="26" cy="26" r="25" fill="none" stroke="#2E7D5B" stroke-width="2"/>
+          <path class="success-check" fill="none" stroke="#2E7D5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+      </div>
+      <h3>상담 신청이 완료되었습니다!</h3>
+      <p>빠른 시일 내에 연락드리겠습니다.<br>감사합니다.</p>
+      <div class="success-modal-btns">
+        <a href="tel:1533-9829" class="btn btn-primary btn-ripple">바로 전화하기</a>
+        <button class="btn btn-outline btn-ripple" id="successModalClose">확인</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="맨 위로">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

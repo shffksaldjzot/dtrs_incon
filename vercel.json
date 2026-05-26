@@ -18,7 +18,8 @@
     { "source": "/yt", "destination": "/?utm_source=youtube&utm_medium=social&utm_campaign=channel_profile", "permanent": false },
     { "source": "/ig", "destination": "/?utm_source=instagram&utm_medium=social&utm_campaign=profile_bio", "permanent": false },
     { "source": "/kt", "destination": "/?utm_source=kakao&utm_medium=social&utm_campaign=openchat_profile", "permanent": false },
-    { "source": "/fm", "destination": "/?utm_source=fmkorea&utm_medium=referral&utm_campaign=community_post", "permanent": false }
+    { "source": "/fm", "destination": "/?utm_source=fmkorea&utm_medium=referral&utm_campaign=community_post", "permanent": false },
+    { "source": "/th", "destination": "/?utm_source=threads&utm_medium=social&utm_campaign=profile_bio", "permanent": false }
   ],
   "cleanUrls": true,
   "trailingSlash": false

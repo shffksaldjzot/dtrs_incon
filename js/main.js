@@ -279,22 +279,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Collect form data
     const spaceType = form.querySelector('input[name="space_type"]:checked');
-    const stage = form.querySelector('input[name="stage"]:checked');
-    const area = form.querySelector('input[name="area"]:checked');
-    const docs = form.querySelectorAll('input[name="docs"]:checked');
-    const schedule = form.querySelector('input[name="schedule"]:checked');
 
     const formPayload = {
       name: nameInput.value.trim(),
       phone: phoneInput.value.trim(),
       location: document.getElementById('f-location').value.trim(),
-      space_type: spaceType ? spaceType.value : '',
-      stage: stage ? stage.value : '',
-      area: area ? area.value : '',
-      concern: document.getElementById('f-concern').value.trim(),
-      docs: Array.from(docs).map(d => d.value),
-      schedule: schedule ? schedule.value : '',
-      extra: document.getElementById('f-extra').value.trim()
+      space_type: spaceType ? spaceType.value : ''
     };
 
     // Submit via API (Google Forms + Slack notification)

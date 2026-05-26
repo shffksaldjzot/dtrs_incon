@@ -1453,6 +1453,16 @@ button {
   color: #3C1E1E;
 }
 
+.float-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+}
+
+.float-youtube {
+  background: #FF0000;
+  color: #ffffff;
+}
+
 .float-tooltip {
   position: absolute;
   right: 68px;
@@ -1524,6 +1534,156 @@ button {
   font-size: 0.78rem;
   opacity: 0.45;
   margin-top: 2px;
+}
+
+/* ---------- HEADER SNS ICONS ---------- */
+.nav-sns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: -8px;
+  margin-right: -4px;
+}
+
+.nav-sns-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--cream);
+  opacity: 0.7;
+  transition: opacity var(--transition), transform var(--transition);
+  padding: 0 !important;
+}
+
+.nav-sns-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.nav-sns-link::after {
+  display: none !important;
+}
+
+/* Mobile nav SNS */
+.mobile-nav-sns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(245, 240, 235, 0.1);
+}
+
+.mobile-nav-sns-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 12px;
+  color: var(--cream);
+  opacity: 0.85;
+  font-size: 1rem;
+  transition: opacity var(--transition);
+}
+
+.mobile-nav-sns-link:hover {
+  opacity: 1;
+}
+
+.mobile-nav-sns-link::after {
+  display: none !important;
+}
+
+/* ---------- FOOTER SNS ---------- */
+.footer-sns {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 20px 0 8px;
+  flex-wrap: wrap;
+}
+
+.footer-sns-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cream);
+  opacity: 0.7;
+  font-size: 0.85rem;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.footer-sns-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  color: var(--gold);
+}
+
+/* ---------- HERO CTA GROUP ---------- */
+.hero-cta-group {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-hero-kakao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(254, 229, 0, 0.12);
+  color: #FEE500;
+  border: 1.5px solid rgba(254, 229, 0, 0.55);
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-hero-kakao svg {
+  color: #FEE500;
+}
+
+.btn-hero-kakao:hover {
+  background: #FEE500;
+  color: #3C1E1E;
+  border-color: #FEE500;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(254, 229, 0, 0.3);
+}
+
+.btn-hero-kakao:hover svg {
+  color: #3C1E1E;
+}
+
+@media (max-width: 600px) {
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* ---------- CONTACT FORM SUBTITLE ---------- */
+.contact-form-sub {
+  font-size: 0.9rem;
+  opacity: 0.65;
+  margin-top: -8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ---------- RESPONSIVE: Hide header SNS on small mobile ---------- */
+@media (max-width: 768px) {
+  .nav-sns {
+    display: none;
+  }
 }
 
 /* Mobile nav logo */

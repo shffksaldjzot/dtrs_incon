@@ -37,13 +37,7 @@ export default async function handler(req, res) {
     name: 'entry.1750516445',
     phone: 'entry.943515076',
     location: 'entry.1680683942',
-    space_type: 'entry.271598067',
-    stage: 'entry.670292362',
-    area: 'entry.1475256016',
-    concern: 'entry.1363863516',
-    docs: 'entry.1091142326',
-    schedule: 'entry.19501128',
-    extra: 'entry.69819870'
+    space_type: 'entry.271598067'
   };
 
   const params = new URLSearchParams();
@@ -51,14 +45,6 @@ export default async function handler(req, res) {
   params.append(ENTRY_IDS.phone, sanitize(data.phone));
   params.append(ENTRY_IDS.location, sanitize(data.location));
   if (data.space_type) params.append(ENTRY_IDS.space_type, sanitize(data.space_type));
-  if (data.stage) params.append(ENTRY_IDS.stage, sanitize(data.stage));
-  if (data.area) params.append(ENTRY_IDS.area, sanitize(data.area));
-  if (data.concern) params.append(ENTRY_IDS.concern, sanitize(data.concern));
-  if (data.docs && Array.isArray(data.docs)) {
-    data.docs.slice(0, 10).forEach(doc => params.append(ENTRY_IDS.docs, sanitize(doc)));
-  }
-  if (data.schedule) params.append(ENTRY_IDS.schedule, sanitize(data.schedule));
-  if (data.extra) params.append(ENTRY_IDS.extra, sanitize(data.extra));
 
   try {
     await fetch(GOOGLE_FORM_URL + '?' + params.toString());
@@ -83,26 +69,9 @@ export default async function handler(req, res) {
             { type: 'mrkdwn', text: `*이름:*\n${sanitize(data.name)}` },
             { type: 'mrkdwn', text: `*연락처:*\n${sanitize(data.phone)}` },
             { type: 'mrkdwn', text: `*지역:*\n${sanitize(data.location)}` },
-            { type: 'mrkdwn', text: `*공간 유형:*\n${sanitize(data.space_type) || '-'}` },
-            { type: 'mrkdwn', text: `*현재 단계:*\n${sanitize(data.stage) || '-'}` },
-            { type: 'mrkdwn', text: `*평수:*\n${sanitize(data.area) || '-'}` }
+            { type: 'mrkdwn', text: `*공간 유형:*\n${sanitize(data.space_type) || '-'}` }
           ]
         },
-        {
-          type: 'section',
-          text: { type: 'mrkdwn', text: `*고민 사항:*\n${sanitize(data.concern) || '-'}` }
-        },
-        {
-          type: 'section',
-          fields: [
-            { type: 'mrkdwn', text: `*보유 자료:*\n${data.docs ? data.docs.map(d => sanitize(d)).join(', ') : '-'}` },
-            { type: 'mrkdwn', text: `*희망 일정:*\n${sanitize(data.schedule) || '-'}` }
-          ]
-        },
-        ...(data.extra ? [{
-          type: 'section',
-          text: { type: 'mrkdwn', text: `*기타 요청:*\n${sanitize(data.extra)}` }
-        }] : []),
         {
           type: 'divider'
         },
